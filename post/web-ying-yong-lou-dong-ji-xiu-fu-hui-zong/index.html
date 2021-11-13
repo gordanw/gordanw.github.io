@@ -1,22 +1,109 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://gordanw.github.io</id>
-    <title>Wong</title>
-    <updated>2021-11-13T04:56:37.817Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://gordanw.github.io"/>
-    <link rel="self" href="https://gordanw.github.io/atom.xml"/>
-    <subtitle>人生精彩只因挑战，要带着信心，不惧下雨天</subtitle>
-    <logo>https://gordanw.github.io/images/avatar.png</logo>
-    <icon>https://gordanw.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Wong</rights>
-    <entry>
-        <title type="html"><![CDATA[Web应用漏洞及修复汇总]]></title>
-        <id>https://gordanw.github.io/post/web-ying-yong-lou-dong-ji-xiu-fu-hui-zong/</id>
-        <link href="https://gordanw.github.io/post/web-ying-yong-lou-dong-ji-xiu-fu-hui-zong/">
-        </link>
-        <updated>2021-11-13T04:53:31.000Z</updated>
-        <content type="html"><![CDATA[<p>1.SQL注入<br>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Web应用漏洞及修复汇总 | Wong</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://gordanw.github.io/favicon.ico?v=1636779361625">
+<link rel="stylesheet" href="https://gordanw.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="1.SQL注入
+风险等级：高危
+漏洞描述：
+SQL注入漏洞产生的原因是网站应用程序在编写时未对用户提交至服务器的数据进行合法性校验，即没有进行有效地特殊字符过滤，导致网站服务器存在安全风险，这就是SQL Injection，即SQL注入漏洞..." />
+    <meta name="keywords" content="Web" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://gordanw.github.io">
+        <img src="https://gordanw.github.io/images/avatar.png?v=1636779361625" class="site-logo">
+        <h1 class="site-title">Wong</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+        
+          <a href="/classification" class="site-nav">
+            分类
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      人生精彩只因挑战，要带着信心，不惧下雨天
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://gordanw.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Web应用漏洞及修复汇总</h2>
+            <div class="post-date">2021-11-13</div>
+            
+            <div class="post-content" v-pre>
+              <p>1.SQL注入<br>
 风险等级：高危<br>
 漏洞描述：<br>
 SQL注入漏洞产生的原因是网站应用程序在编写时未对用户提交至服务器的数据进行合法性校验，即没有进行有效地特殊字符过滤，导致网站服务器存在安全风险，这就是SQL Injection，即SQL注入漏洞。<br>
@@ -263,250 +350,54 @@ Web 应用程序执行指向外部站点的重定向；<br>
 3.攻击者可进一步登陆后台查看网站信息、上传恶意脚本文件，获取服务器权限，导致局域网(内网)被入侵。<br>
 修复建议：<br>
 1.对该页面进行访问控制，禁止外网IP或非法IP访问后台页面，并增加验证码校验，加强帐号锁定机制。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Shell 脚本-case 及函数       ]]></title>
-        <id>https://gordanw.github.io/post/shell-jiao-ben-case-ji-han-shu-wong/</id>
-        <link href="https://gordanw.github.io/post/shell-jiao-ben-case-ji-han-shu-wong/">
-        </link>
-        <updated>2021-11-13T04:29:56.000Z</updated>
-        <content type="html"><![CDATA[<ol>
-<li>case 语句<br>
-面向过程：<br>
-控制结构<br>
-顺序结构（默认的结构）<br>
-选项结构（if、then、elif、else、等）<br>
-循环结构（for、while、until）</li>
-</ol>
-<p>case 语句：选择结构</p>
-<p>case SWITCH in<br>
-VALUE1)<br>
-statemnet<br>
-．．．<br>
-;;<br>
-VALUE2)<br>
-statemnet<br>
-．．．<br>
-;;<br>
-VALUE3)<br>
-statemnet<br>
-．．．<br>
-;;<br>
-*)<br>
-statemnet<br>
-．．．<br>
-;;<br>
-esac</p>
-<p>例：<br>
-#!/bin/bash<br>
-case $1 in<br>
-start)<br>
-echo start<br>
-;;<br>
-stop)<br>
-echo stop<br>
-;;<br>
-restart)<br>
-echo restart<br>
-;;<br>
-*)<br>
-echo &quot;USE$0 start|stop|restart&quot;<br>
-;;<br>
-esac</p>
-<ol start="2">
-<li>函数<br>
-函数：（function）功能，实现编译结构化，主要目的实现代码重用，在一个代码会在多次使用时，<br>
-可以独立写成一个模块，在以下需要使用时，直接调用即可，但是函数不能作为执行入后，只能被其他程<br>
-序调用才能执行，一个函数可以被多个程序调用</li>
-</ol>
-<p>实现函数;<br>
-在 bash 中使用函数功能，需要把本来可以独立执行的一段代码封装成独立的一个功能，并取个<br>
-名<br>
-称，而后在需要使用此函数功能时，直接调用该函数名称即可</p>
-<p>定义方法：<br>
-方法一：<br>
-function FUMNAME {<br>
-command<br>
-}<br>
-注解：<br>
-function 是关键字，必须要指定，不能错误</p>
-<p>方法二：<br>
-FUMNAME() {<br>
-command<br>
-}</p>
-<p>注解：<br>
-FUMNAME，命名规则，不能与变量名同样，只能包含字母、数字、下划线，而且不能以数字<br>
-开头，小括号()紧跟在使用 FUMNAME 后面，不能有空格，大括号括起需要执行的命令</p>
-<p>例 1：<br>
-#!/bin/bash<br>
-function MENU {<br>
-cat &lt;&lt; EOF<br>
-d|D) show disk usages<br>
-m|M) show memory userges<br>
-s|S) show swap userges<br>
-q|Q) quit.<br>
-EOF<br>
-}<br>
-MENU<br>
-read -p &quot;You choice: &quot; CHOICE<br>
-until [ $CHOICE == 'q' -o $CHOICE == 'Q' ]<br>
-do<br>
-case $CHOICE in<br>
-d|D) df -lh ;;<br>
-m|M) free -m |grep &quot;^Mem&quot; ;;<br>
-s|S) free -m |grep &quot;^Swap&quot; ;;<br>
-*)<br>
-echo -e &quot;\n[d|D][m|M][s|S]&quot;<br>
-;;<br>
-esac<br>
-MENU<br>
-read -p &quot;You choice: &quot; CHOICE<br>
-done</p>
-<p>自定义函数执行状态返回值：<br>
-return #<br>
-0-255<br>
-在函数执行过程中，凡是遇到 return 都停止执行</p>
-<p>例：<br>
-#!/bin/bash<br>
-ADDUSER() {<br>
-USERNAME=cjk<br>
-if ! id -u $USERNAME &amp;&gt; /dev/null<br>
-then<br>
-useradd $USERNAME &amp;&gt; /dev/null<br>
-echo $USERNAME |passwd --stdin $USERNAME &amp;&gt; /dev/null<br>
-return 0<br>
-else<br>
-return 1<br>
-fi<br>
-}<br>
-ADDUSER<br>
-echo $?</p>
-<p>传递参数给函数：<br>
-在函数中使用$1、$2 . . . 引用位置变量，在调用函数时，FUNNAME VALUE VALUE . . .<br>
-例：<br>
-#!/bin/bash<br>
-TOSUM() {<br>
-echo $[$1+$2]<br>
-}<br>
-TOSUM 5 8</p>
-<p>如果在执行脚本时指定参数时：<br>
-在函数中使用$1、$2 . . . 引用位置变量，在调用函数时，FUNNAME $1、$2 . . .</p>
-<p>例 1：<br>
-#!/bin/bash<br>
-TOSUM() {<br>
-echo $[$1+$2]<br>
-}<br>
-TOSUM $1 $2</p>
-<p>例 2：<br>
-判定某个网段的主机乊间那些可以 ping 通<br>
-1、使用函数实现每一台主机的判定过程 IP 为 192.168.0.1 - 192.168.0.10<br>
-2、在主程序中来调用函数范围内的所有主机的在线情况<br>
-#!/bin/bash<br>
-PINGHOST() {<br>
-if ping -c 1 -W 1 192.168.0.$1 &amp;&gt; /dev/null<br>
-then<br>
-echo &quot;192.168.0.$1 OK&quot;<br>
-else<br>
-echo &quot;192.168.0.$1 ONT OK&quot;<br>
-fi<br>
-}</p>
-<p>for i in <code>seq 1 10</code><br>
-do<br>
-PINGHOST $i<br>
-done</p>
-<p>或：</p>
-<p>#!/bin/bash<br>
-PINGHOST() {<br>
-if ping -c 1 -W 1 $1.$2 &amp;&gt; /dev/null<br>
-then<br>
-echo &quot;$1.$2 OK&quot;<br>
-else<br>
-echo &quot;$1.$2 ONT OK&quot;<br>
-fi<br>
-}<br>
-for i in <code>seq $2 $3</code><br>
-do<br>
-PINGHOST $1 $i<br>
-done<br>
-在执行脚本时，需要传递 3 个参数，网段 起始主机 结束主机，例：./ping.sh 192.168.0 1 10</p>
-<p>for ((expr1 ; expr2 ; expr3))<br>
-do<br>
-循环体<br>
-done</p>
-<p>注解：(( expr1 ; expr2 ; expr3 ))<br>
-expr1，第一个表达式：用于指定初始条件，指定控制变量的初始值<br>
-expr2，第二个表达式：判定什么时退出循环<br>
-expr3，第二个表达式：修改 expr1 的变量的值</p>
-<p>例：<br>
-计算 1 到 100 乊间所有整数的和<br>
-#!/bin/bash<br>
-declare -i SUM=0<br>
-for ((I=1;I&lt;=100;I++))<br>
-do<br>
-let SUM+=$I<br>
-done<br>
-echo $SUM</p>
-<p>8.3 shell 案例<br>
-跳板机<br>
-#!/bin/bash<br>
-trap &quot;&quot; HUP INT QUIT TSTP<br>
-while :<br>
-do<br>
-cat &lt;&lt;EOF<br>
-1.piloteer-101<br>
-2.piloteer-120<br>
-3.piloteer-121<br>
-4.quit<br>
-EOF<br>
-read -p &quot;Input number [1-4]: &quot; num<br>
-case $num in<br>
-1)<br>
-ssh root@192.168.1.101<br>
-;;<br>
-2)<br>
-ssh root@192.168.1.120<br>
-;;<br>
-3)<br>
-ssh root@192.168.1.121<br>
-;;<br>
-4)<br>
-kill -9 <code>ps -ef|grep $0 |grep -v grep|awk '{print $2}'</code><br>
-;;<br>
-'')<br>
-true<br>
-;;<br>
-*)<br>
-echo &quot;Please input num [1-4]&quot;<br>
-esac</p>
-<p>done</p>
-<p>1、判断一个指定的 bash 脚本是否有语法错误，如果有则提醒用户键入 Q 或 q，无视错误并退出，<br>
-任意任意键可以通过 vim 打开指定的脚本<br>
-2、如果用户通过 vim 编辑后保存退出时仍然有错误，则重复第一步，如果编辑后没有语法错误，则<br>
-正常退出<br>
-#!/bin/bash<br>
-while ! bash -n $1 ; do<br>
-read -p &quot;Syntax error,[Q|q] to quit others for editing:&quot; CHOICE<br>
-case $CHOICE in<br>
-q|Q)<br>
-echo &quot;Something wrong quiting.&quot;<br>
-exit 5<br>
-;;<br>
-*)<br>
-vim + $1<br>
-;;<br>
-esac<br>
-done<br>
-echo &quot;not error&quot;</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello 点我]]></title>
-        <id>https://gordanw.github.io/post/hello/</id>
-        <link href="https://gordanw.github.io/post/hello/">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <content type="html"><![CDATA[<p>Hello，需要发文章请加Q 1773551269</p>
-]]></content>
-    </entry>
-</feed>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://gordanw.github.io/tag/3chMPfYaF/" class="tag">
+                    Web
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://gordanw.github.io/post/shell-jiao-ben-case-ji-han-shu-wong/">
+                  <h3 class="post-title">
+                    Shell 脚本-case 及函数       
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
