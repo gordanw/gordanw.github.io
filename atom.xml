@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gordanw.github.io</id>
     <title>Wong</title>
-    <updated>2021-11-13T04:45:38.499Z</updated>
+    <updated>2021-11-13T04:46:14.588Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gordanw.github.io"/>
     <link rel="self" href="https://gordanw.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://gordanw.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Wong</rights>
     <entry>
-        <title type="html"><![CDATA[Shell 脚本-case 及函数    Wong]]></title>
+        <title type="html"><![CDATA[Shell 脚本-case 及函数]]></title>
         <id>https://gordanw.github.io/post/shell-jiao-ben-case-ji-han-shu-wong/</id>
         <link href="https://gordanw.github.io/post/shell-jiao-ben-case-ji-han-shu-wong/">
         </link>
