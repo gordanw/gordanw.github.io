@@ -1,22 +1,117 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://gordanw.github.io</id>
-    <title>Wong</title>
-    <updated>2021-11-13T04:45:38.499Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://gordanw.github.io"/>
-    <link rel="self" href="https://gordanw.github.io/atom.xml"/>
-    <subtitle>人生精彩只因挑战，要带着信心，不惧下雨天</subtitle>
-    <logo>https://gordanw.github.io/images/avatar.png</logo>
-    <icon>https://gordanw.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Wong</rights>
-    <entry>
-        <title type="html"><![CDATA[Shell 脚本-case 及函数    Wong]]></title>
-        <id>https://gordanw.github.io/post/shell-jiao-ben-case-ji-han-shu-wong/</id>
-        <link href="https://gordanw.github.io/post/shell-jiao-ben-case-ji-han-shu-wong/">
-        </link>
-        <updated>2021-11-13T04:29:56.000Z</updated>
-        <content type="html"><![CDATA[<ol>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Shell 脚本-case 及函数    Wong | Wong</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://gordanw.github.io/favicon.ico?v=1636778731963">
+<link rel="stylesheet" href="https://gordanw.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+case 语句
+面向过程：
+控制结构
+顺序结构（默认的结构）
+选项结构（if、then、elif、else、等）
+循环结构（for、while、until）
+
+case 语句：选择结构
+case SWITCH in
+VALUE1)
+sta..." />
+    <meta name="keywords" content="Linux" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://gordanw.github.io">
+        <img src="https://gordanw.github.io/images/avatar.png?v=1636778731963" class="site-logo">
+        <h1 class="site-title">Wong</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+        
+          <a href="/classification" class="site-nav">
+            分类
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      人生精彩只因挑战，要带着信心，不惧下雨天
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://gordanw.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Shell 脚本-case 及函数    Wong</h2>
+            <div class="post-date">2021-11-13</div>
+            
+            <div class="post-content" v-pre>
+              <ol>
 <li>case 语句<br>
 面向过程：<br>
 控制结构<br>
@@ -243,15 +338,54 @@ vim + $1<br>
 esac<br>
 done<br>
 echo &quot;not error&quot;</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello 点我]]></title>
-        <id>https://gordanw.github.io/post/hello/</id>
-        <link href="https://gordanw.github.io/post/hello/">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <content type="html"><![CDATA[<p>Hello，这里是jgw墙，需要免费投稿请加Q 1773551269</p>
-]]></content>
-    </entry>
-</feed>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://gordanw.github.io/tag/KgE_BSq_7/" class="tag">
+                    Linux
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://gordanw.github.io/post/hello/">
+                  <h3 class="post-title">
+                    Hello 点我
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
