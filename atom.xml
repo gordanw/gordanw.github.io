@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gordanw.github.io</id>
-    <title>Vincent Wong</title>
-    <updated>2021-11-13T01:45:29.651Z</updated>
+    <title>Gordan Wong</title>
+    <updated>2021-11-13T01:47:38.853Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gordanw.github.io"/>
     <link rel="self" href="https://gordanw.github.io/atom.xml"/>
     <subtitle>人生精彩只因挑战，要带着信心，不惧下雨天</subtitle>
     <logo>https://gordanw.github.io/images/avatar.png</logo>
     <icon>https://gordanw.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Vincent Wong</rights>
+    <rights>All rights reserved 2021, Gordan Wong</rights>
     <entry>
         <title type="html"><![CDATA[Hello ]]></title>
         <id>https://gordanw.github.io/post/hello/</id>
