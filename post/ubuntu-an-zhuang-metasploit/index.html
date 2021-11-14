@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Ubuntu安装Metasploit | Wong</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://gordanw.github.io/favicon.ico?v=1636876691558">
+<link rel="stylesheet" href="https://gordanw.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="渗透利⽤框架 Metasploit的安装
+打开终端，输入命令：
+sudo wget http://downloads.metasploit.com/data/releases/metasploit-latest-linux-x64-inst..." />
+    <meta name="keywords" content="Linux" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://gordanw.github.io">
+        <img src="https://gordanw.github.io/images/avatar.png?v=1636876691558" class="site-logo">
+        <h1 class="site-title">Wong</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+        
+          <a href="/classification" class="site-nav">
+            分类
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      人生精彩只因挑战，要带着信心，不惧下雨天
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://gordanw.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Ubuntu安装Metasploit</h2>
+            <div class="post-date">2021-11-14</div>
+            
+            <div class="post-content" v-pre>
+              <p>渗透利⽤框架 Metasploit的安装<br>
+打开终端，输入命令：<br>
+sudo wget http://downloads.metasploit.com/data/releases/metasploit-latest-linux-x64-installer.run<br>
+<img src="https://gordanw.github.io/post-images/1636876416628.png" alt="" loading="lazy"><br>
+2.给安装文件赋操作权限，执行命令：sudo chmod +x metasploit-latest-linux-x64-installer.run<br>
+3.运行安装包，执行命令：sudo ./metasploit-latest-linux-x64-installer.run<br>
+4.弹出安装窗口后，点击前进按钮<br>
+<img src="https://gordanw.github.io/post-images/1636876456666.png" alt="" loading="lazy"><br>
+5.点击同意协议，点击前进<br>
+<img src="https://gordanw.github.io/post-images/1636876468440.png" alt="" loading="lazy"><br>
+6.选择Metasploit的安装目录。您选择的目录必须为空。单击“前进”继续。<br>
+<img src="https://gordanw.github.io/post-images/1636876484758.png" alt="" loading="lazy"><br>
+7.选择‘yes’将Metasploit注册为服务（推荐）。然后，单击“前进”继续。<br>
+<img src="https://gordanw.github.io/post-images/1636876502205.png" alt="" loading="lazy"><br>
+8.当“禁用防病毒和防火墙”屏幕出现时，如果您已在本地系统上禁用了防病毒软件和防火墙，请单击“前进”。如果尚未禁用它们，则此时必须禁用它们。<br>
+<img src="https://gordanw.github.io/post-images/1636876522931.png" alt="" loading="lazy"><br>
+9.输入Metasploit服务应使用的SSL端口，然后单击‘前进’。<br>
+<img src="https://gordanw.github.io/post-images/1636876539337.png" alt="" loading="lazy"><br>
+10.在“Days of validity”字段中输入要用于生成SSL证书的Web服务器名称以及该证书有效的天数，点击‘前进’按钮。<br>
+<img src="https://gordanw.github.io/post-images/1636876555301.png" alt="" loading="lazy"><br>
+11.当出现“Ready to install”屏幕时，单击“前进”开始安装过程。<br>
+<img src="https://gordanw.github.io/post-images/1636876568294.png" alt="" loading="lazy"><br>
+12.安装完成后，单击“Finish”按钮。<br>
+<img src="https://gordanw.github.io/post-images/1636876605700.png" alt="" loading="lazy"></p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://gordanw.github.io/tag/KgE_BSq_7/" class="tag">
+                    Linux
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://gordanw.github.io/post/wang-luo-duan-kou-jie-shao-da-quan/">
+                  <h3 class="post-title">
+                    网络端口介绍大全
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

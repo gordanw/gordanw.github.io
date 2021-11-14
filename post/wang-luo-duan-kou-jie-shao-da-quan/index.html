@@ -1,54 +1,117 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://gordanw.github.io</id>
-    <title>Wong</title>
-    <updated>2021-11-14T08:02:36.442Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://gordanw.github.io"/>
-    <link rel="self" href="https://gordanw.github.io/atom.xml"/>
-    <subtitle>人生精彩只因挑战，要带着信心，不惧下雨天</subtitle>
-    <logo>https://gordanw.github.io/images/avatar.png</logo>
-    <icon>https://gordanw.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Wong</rights>
-    <entry>
-        <title type="html"><![CDATA[Ubuntu安装Metasploit]]></title>
-        <id>https://gordanw.github.io/post/ubuntu-an-zhuang-metasploit/</id>
-        <link href="https://gordanw.github.io/post/ubuntu-an-zhuang-metasploit/">
-        </link>
-        <updated>2021-11-14T07:51:32.000Z</updated>
-        <content type="html"><![CDATA[<p>渗透利⽤框架 Metasploit的安装<br>
-打开终端，输入命令：<br>
-sudo wget http://downloads.metasploit.com/data/releases/metasploit-latest-linux-x64-installer.run<br>
-<img src="https://gordanw.github.io/post-images/1636876416628.png" alt="" loading="lazy"><br>
-2.给安装文件赋操作权限，执行命令：sudo chmod +x metasploit-latest-linux-x64-installer.run<br>
-3.运行安装包，执行命令：sudo ./metasploit-latest-linux-x64-installer.run<br>
-4.弹出安装窗口后，点击前进按钮<br>
-<img src="https://gordanw.github.io/post-images/1636876456666.png" alt="" loading="lazy"><br>
-5.点击同意协议，点击前进<br>
-<img src="https://gordanw.github.io/post-images/1636876468440.png" alt="" loading="lazy"><br>
-6.选择Metasploit的安装目录。您选择的目录必须为空。单击“前进”继续。<br>
-<img src="https://gordanw.github.io/post-images/1636876484758.png" alt="" loading="lazy"><br>
-7.选择‘yes’将Metasploit注册为服务（推荐）。然后，单击“前进”继续。<br>
-<img src="https://gordanw.github.io/post-images/1636876502205.png" alt="" loading="lazy"><br>
-8.当“禁用防病毒和防火墙”屏幕出现时，如果您已在本地系统上禁用了防病毒软件和防火墙，请单击“前进”。如果尚未禁用它们，则此时必须禁用它们。<br>
-<img src="https://gordanw.github.io/post-images/1636876522931.png" alt="" loading="lazy"><br>
-9.输入Metasploit服务应使用的SSL端口，然后单击‘前进’。<br>
-<img src="https://gordanw.github.io/post-images/1636876539337.png" alt="" loading="lazy"><br>
-10.在“Days of validity”字段中输入要用于生成SSL证书的Web服务器名称以及该证书有效的天数，点击‘前进’按钮。<br>
-<img src="https://gordanw.github.io/post-images/1636876555301.png" alt="" loading="lazy"><br>
-11.当出现“Ready to install”屏幕时，单击“前进”开始安装过程。<br>
-<img src="https://gordanw.github.io/post-images/1636876568294.png" alt="" loading="lazy"><br>
-12.安装完成后，单击“Finish”按钮。<br>
-<img src="https://gordanw.github.io/post-images/1636876605700.png" alt="" loading="lazy"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[网络端口介绍大全]]></title>
-        <id>https://gordanw.github.io/post/wang-luo-duan-kou-jie-shao-da-quan/</id>
-        <link href="https://gordanw.github.io/post/wang-luo-duan-kou-jie-shao-da-quan/">
-        </link>
-        <updated>2021-11-14T07:44:44.000Z</updated>
-        <content type="html"><![CDATA[<p>2端口：管理实用程序<br>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>网络端口介绍大全 | Wong</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://gordanw.github.io/favicon.ico?v=1636876691558">
+<link rel="stylesheet" href="https://gordanw.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="2端口：管理实用程序
+3端口：压缩进程
+5端口：远程作业登录
+7端口：回显
+9端口：丢弃
+11端口：在线用户
+13端口：时间
+17端口：每日引用
+18端口：消息发送协议
+19端口：字符发生器
+20端口：FTP文件传输协议(默认数据口)
+21..." />
+    <meta name="keywords" content="Web" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://gordanw.github.io">
+        <img src="https://gordanw.github.io/images/avatar.png?v=1636876691558" class="site-logo">
+        <h1 class="site-title">Wong</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+        
+          <a href="/classification" class="site-nav">
+            分类
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      人生精彩只因挑战，要带着信心，不惧下雨天
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://gordanw.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">网络端口介绍大全</h2>
+            <div class="post-date">2021-11-14</div>
+            
+            <div class="post-content" v-pre>
+              <p>2端口：管理实用程序<br>
 3端口：压缩进程<br>
 5端口：远程作业登录<br>
 7端口：回显<br>
@@ -794,496 +857,54 @@ sudo wget http://downloads.metasploit.com/data/releases/metasploit-latest-linux-
 61466端口：木马Telecommando开放此端口<br>
 65000端口：木马Devil 1.03开放此端口<br>
 65301端口：PC Anywhere软件开放端口</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Web应用漏洞及修复汇总]]></title>
-        <id>https://gordanw.github.io/post/web-ying-yong-lou-dong-ji-xiu-fu-hui-zong/</id>
-        <link href="https://gordanw.github.io/post/web-ying-yong-lou-dong-ji-xiu-fu-hui-zong/">
-        </link>
-        <updated>2021-11-13T04:53:31.000Z</updated>
-        <content type="html"><![CDATA[<p>1.SQL注入<br>
-风险等级：高危<br>
-漏洞描述：<br>
-SQL注入漏洞产生的原因是网站应用程序在编写时未对用户提交至服务器的数据进行合法性校验，即没有进行有效地特殊字符过滤，导致网站服务器存在安全风险，这就是SQL Injection，即SQL注入漏洞。<br>
-漏洞危害：<br>
-机密数据被窃取；<br>
-核心业务数据被篡改；<br>
-网页被篡改；<br>
-数据库所在服务器被攻击从而变为傀儡主机，导致局域网(内网)被入侵。<br>
-修复建议：<br>
-在网页代码中对用户输入的数据进行严格过滤；（代码层）<br>
-部署Web应用防火墙；（设备层）<br>
-对数据库操作进行监控。（数据库层）<br>
-代码层最佳防御sql漏洞方案：<br>
-采用sql语句预编译和绑定变量，是防御sql注入的最佳方法。<br>
-原因：<br>
-采用了PreparedStatement，就会将sql语句：&quot;select id, no from user where id=?&quot; 预先编译好，也就是SQL引擎会预先进行语法分析，产生语法树，生成执行计划，也就是说，后面你输入的参数，无论你输入的是什么，都不会影响该sql语句的 语法结构了，因为语法分析已经完成了，而语法分析主要是分析sql命令，比如 select ,from ,where ,and, or ,order by 等等。所以即使你后面输入了这些sql命令，也不会被当成sql命令来执行了，因为这些sql命令的执行， 必须先的通过语法分析，生成执行计划，既然语法分析已经完成，已经预编译过了，那么后面输入的参数，是绝对不可能作为sql命令来执行的，只会被当做字符串字面值参数，所以sql语句预编译可以防御sql注入。<br>
-其他防御方式：<br>
-正则过滤</p>
-<p>2.目录遍历<br>
-风险等级：中危<br>
-漏洞描述：<br>
-通过该漏洞可以获取系统文件及服务器的配置文件。利用服务器API、文件标准权限进行攻击。<br>
-漏洞危害：<br>
-黑客可获得服务器上的文件目录结构，从而下载敏感文件。<br>
-修复建议：<br>
-1.通过修改配置文件，去除中间件（如IIS、apache、tomcat）的文件目录索引功能<br>
-2.设置目录权限<br>
-3.在每个目录下创建一个空的index.html页面。</p>
-<p>3.跨站脚本<br>
-即XSS漏洞，利用跨站脚本漏洞可以在网站中插入任意代码，它能够获取网站管理员或普通用户的cookie，隐蔽运行网页木马，甚至格式化浏览者的硬盘。<br>
-漏洞危害：<br>
-网络钓鱼，盗取管理员或用户帐号和隐私信息等；<br>
-劫持合法用户会话，利用管理员身份进行恶意操作，篡改页面内容、进一步渗透网站；<br>
-网页挂马、传播跨站脚本蠕虫等；<br>
-控制受害者机器向其他系统发起攻击。<br>
-修复建议：<br>
-设置httponly<br>
-httponly无法完全的防御xss漏洞，它只是规定了不能使用js去获取cookie的内容，因此它只能防御利用xss进行cookie劫持的问题。Httponly是在set-cookie时标记的，可对单独某个参数标记也可对全部参数标记。由于设置httponly的方法比较简单，使用也很灵活，并且对防御cookie劫持非常有用，因此已经渐渐成为一种默认的标准。<br>
-xss filter<br>
-Xss filter往往是一个文本文件，里面包含了允许被用户输入提交的字符（也有些是包含不允许用户提交的字符）。它检测的点在于用户输入的时候，xss filter分为白名单与黑名单，推荐使用白名单，但即使使用白名单还是无法完全杜绝xss问题，并且使用不当可能会带来很高的误报率。<br>
-编码转义<br>
-编码方式有很多，比如html编码、url编码、16进制编码、javascript编码等。<br>
-在处理用户输入时，除了用xss filter的方式过滤一些敏感字符外，还需要配合编码，将一些敏感字符通过编码的方式改变原来的样子，从而不能被浏览器当成js代码执行。<br>
-处理富文本<br>
-有些网页编辑器允许用户提交一些自定义的html代码，称之为”富文本”。想要在富文本处防御xss漏洞，最简单有效的方式就是控制用户能使用的标签，限制为只能使用a、div等安全的标签。<br>
-处理所有输出类型的xss漏洞<br>
-xss漏洞本质上是一种html注入，也就是将html代码注入到网页中。那么其防御的根本就是在将用户提交的代码显示到页面上时做好一系列的过滤与转义。<br>
-其他修复方案</p>
-<ol>
-<li>开发者应该严格按照openid和openkey的校验规则判断openid和openkey是否合法，且判断其它参数的合法性，不合法不返回任何内容。</li>
-<li>严格限制URL参数输入值的格式，不能包含不必要的特殊字符（ %0d、%0a、%0D 、%0A 等）。</li>
-</ol>
-<p>4.未过滤的HTML代码漏洞</p>
-<p>由于页面未过滤HTML代码，攻击者可通过精心构造XSS代码（或绕过防火墙防护策略），实现跨站脚本攻击等。<br>
-可带来如下危害：<br>
-恶意用户可以使用JavaScript、VBScript、ActiveX、HTML语言甚至Flash利用应用的漏洞，从而获取其他用户信息；<br>
-攻击者能盗取会话cookie、获取账户、模拟其他用户身份，甚至可以修改网页呈现给其他用户的内容。<br>
-修复建议：<br>
-严格过滤用户输入的数据。<br>
-参考跨站脚本漏洞修复方案。</p>
-<p>5.数据库运行出错<br>
-网站存在数据库运行出错，由于网页数据交换出错，攻击者可获取报错中的敏感信息。<br>
-可带来如下危害：<br>
-机密数据被窃取；<br>
-攻击者通过构造特殊URL地址，触发系统web应用程序报错，在回显内容中，获取网站敏感信息；<br>
-攻击者利用泄漏的敏感信息，获取网站服务器web路径，为进一步攻击提供帮助。<br>
-修复建议：<br>
-检查数据库缓存是否溢出，是否具有失效的配置管理、禁用一切不必要的功能；<br>
-对网站错误信息进行统一返回，模糊化处理。</p>
-<p>6.Flash安全配置缺陷漏洞<br>
-网站存在Flash 安全配置缺陷，该漏洞可导致跨域访问，让用户访问非法Flash文件。<br>
-allowScriptAccess：是否允许flash访问浏览器脚本。如果不对不信任的flash限制，默认会允许调用浏览器脚本，产生XSS漏洞。<br>
-always（默认值），总是允许；sameDomain，同域允许；never，不允许<br>
-allowNetworking：是否允许flash访问ActionScript中的网络API。如果不对不信任的flash限制，会带来flash弹窗、CSRF等问题。<br>
-all，允许所有功能，会带来flash弹窗危害；internal，可以向外发送请求/加载网页；none，无法进行任何网络相关动作（业务正常功能可能无法使用）<br>
-+<br>
-可带来如下危害：<br>
-网站的Flash配置文件crossdomain.xml配置不当，存在Flash跨域攻击安全隐患。<br>
-修复建议：<br>
-修改flash安全策略，做严格限制，比如限制到网站当前域；<br>
-找到相应目录下的crossdomain.xml文件，找到代码：cross-domain-policy allow-access-fromdomain=* cross-domain-policy改成：cross-domain-policy allow-access-from domain=改成你的网站地址 cross-domain-policy。</p>
-<p>7.FCK编辑器泄漏漏洞<br>
-漏洞描述<br>
-利用此漏洞攻击者可访问编辑器页面，上传图片。<br>
-漏洞危害：<br>
-由于网站编辑器没有对管理员登录进行校验，导致任意用户访问编辑器；<br>
-利用编辑器漏洞查看网站全硬盘目录。<br>
-修复建议：<br>
-对编辑器页面进行访问控制，禁止未授权访问，并升级fck编辑器版本。</p>
-<p>8.FCKeditor任意文件上传漏洞<br>
-FCKeditor版本低于或等于2.4.3时网站存在任意文件上传漏洞，可以利用该漏洞上传任意文件。<br>
-可带来如下危害：<br>
-由于目标网站未做上传格式的限制，导致网站、数据库和服务器有被入侵的风险；<br>
-可能导致网站被攻击者控制，网站数据被窃取、网页被篡改等。<br>
-修复建议：<br>
-设置FCKeditor编辑器相关页面在未授权的前提下无法正常访问，和限制FCK上传文件的格式；<br>
-下载并更新至FCKeditor的最新版本。</p>
-<p>9.URL Redirect漏洞<br>
-即URL重定向漏洞，通过将 URL 修改为指向恶意站点，攻击者可以成功发起网络钓鱼诈骗并窃取用户凭证。<br>
-可带来如下危害：<br>
-Web 应用程序执行指向外部站点的重定向；<br>
-攻击者可能会使用 Web 服务器攻击其他站点，这将增加匿名性。<br>
-修复建议：<br>
-在网页代码中需要对用户输入的数据进行严格过滤；（代码层）<br>
-部署Web应用防火墙。（设备层）</p>
-<p>10.文件上传漏洞<br>
-网站存在任意文件上传漏洞，文件上传功能没有进行格式限制，容易被黑客利用上传恶意脚本文件。<br>
-可带来如下危害：<br>
-攻击者可通过此漏洞上传恶意脚本文件，对服务器的正常运行造成安全威胁；<br>
-攻击者可上传可执行的WebShell（如php、jsp、asp类型的木马病毒），或者利用目录跳转上传gif、html、config文件，覆盖原有的系统文件，到达获取系统权限的目的。<br>
-修复建议：<br>
-对上传文件格式进行严格校验及安全扫描，防止上传恶意脚本文件；<br>
-设置权限限制，禁止上传目录的执行权限；<br>
-严格限制可上传的文件类型；<br>
-严格限制上传的文件路径。<br>
-文件扩展名服务端白名单校验。<br>
-文件内容服务端校验。<br>
-上传文件重命名。<br>
-隐藏上传文件路径。</p>
-<p>11.后台弱口令漏洞<br>
-网站管理后台用户名密码较为简单或为默认，易被黑客利用。<br>
-可带来如下危害：<br>
-攻击者利用弱口令登录网站管理后台，可任意增删文章等造成负面影响；<br>
-攻击者可进一步查看网站信息，获取服务器权限，导致局域网(内网)被入侵。<br>
-修复建议：<br>
-对管理后台进行访问控制，修改后台弱口令，加强口令强度并定期修改。<br>
-增加验证机制，防爆破机制，限制ip＋cookie访问次数。</p>
-<p>12.敏感信息泄露<br>
-由于网站运维人员疏忽，存放敏感信息的文件被泄露或由于网站运行出错导致敏感信息泄露。<br>
-可带来如下危害：<br>
-攻击者可直接下载用户的相关信息，包括网站的绝对路径、用户的登录名、密码、真实姓名、身份证号、电话号码、邮箱、QQ号等；<br>
-攻击者通过构造特殊URL地址，触发系统web应用程序报错，在回显内容中，获取网站敏感信息；<br>
-攻击者利用泄漏的敏感信息，获取网站服务器web路径，为进一步攻击提供帮助。<br>
-修复建议：<br>
-对网站错误信息进行统一返回，模糊化处理；<br>
-对存放敏感信息的文件进行加密并妥善储存，避免泄漏敏感信息。</p>
-<p>13.未加密登录请求漏洞<br>
-网站对用户登录认证信息未进行加密，敏感信息以明文形式进行传送，易在传输过程中被获取。<br>
-可带来如下危害：<br>
-易造成用户敏感信息泄露与篡改。<br>
-修复建议：<br>
-建议通过加密连接（如SSL）方式进行敏感信息的传送。</p>
-<p>14.后台口令暴力破解<br>
-由于网站管理后台系统登录无验证码校验，可导致后台用户名密码被暴力破解。<br>
-可带来如下危害：<br>
-攻击者可利用该漏洞无限次提交用户名密码，从而可以暴力破解后台用户名及密码；<br>
-暴力破解后登录其中一个帐号可进管理后台，攻击者登录网站后台任意增删文章等造成负面影响；<br>
-攻击者可进一步登陆后台查看网站信息、上传恶意脚本文件，获取服务器权限，导致局域网(内网)被入侵。<br>
-修复建议：<br>
-对该页面进行访问控制，禁止外网IP或非法IP访问后台页面，并增加验证码校验，加强帐号锁定机制。<br>
-增加ip＋cookie配置方式限制访问频率。</p>
-<p>15.跨站请求伪造<br>
-跨站请求伪造，即CSRF，攻击者通过伪造来自受信任用户的请求，达到增加、删除、篡改网站内容的目的。<br>
-可带来的危害：<br>
-攻击者冒充用户/管理员，伪造请求，进行篡改、转帐、改密码、发邮件等非法操作。<br>
-修复建议：<br>
-过滤用户输入，不允许发布含有站内操作URL的链接；<br>
-改良站内 API 的设计，关键操作使用验证码,只接受 POST 请求，GET请求应该只浏览而不改变服务器端资源；<br>
-对于web站点，将持久化的授权方法（例如cookie或者HTTP授权）切换为瞬时的授权方法（在每个form中提供隐藏field）；<br>
-在浏览其它站点前登出站点或者在浏览器会话结束后清理浏览器的cookie。</p>
-<p>16.Unicode 编码转换漏洞<br>
-漏洞等级：中危<br>
-该漏洞由于Unicode在编码转换过程中会忽略某些字符，导致攻击者可插入该字符绕过安全设备的检测。<br>
-可带来如下危害：<br>
-黑客可通过插入特殊字符，可拆分攻击的关键词，绕过安全设备的检测。<br>
-修复建议：<br>
-修改中间件，过滤特殊字符。<br>
-部署Web应用防火墙</p>
-<p>17.发生内部错误<br>
-漏洞描述：<br>
-500 Internal Server Error。<br>
-漏洞危害：<br>
-攻击者向服务器提交精心构造的恶意数据后，有可能导致服务器出现内部错误、服务器宕机或数据库错乱。<br>
-修复建议：<br>
-1.严格过滤用户输入的数据。<br>
-2.服务器错误统一模糊处理，或者跳转到首页／404页面。</p>
-<p>18.SVN源代码泄漏<br>
-由于目标网站没有及时清除SVN服务器连接时的残留信息，导致存在此漏洞。<br>
-可带来如下危害：<br>
-攻击者可利用该漏洞下载网站的源代码，获得数据库的连接密码等敏感信息；<br>
-攻击者可通过源代码分析出新的系统漏洞，从而进一步入侵系统。<br>
-修复建议：<br>
-删除指定SVN生成的各种文件，如“/.svn/entries”等。</p>
-<p>19.旁站攻击漏洞<br>
-多家网站在同一台服务器上，因一个网站存在致命高危漏洞，导致整台服务器被入侵。<br>
-可带来如下危害：<br>
-服务器上的所有网站均可被获得控制权限，攻击者可利用该漏洞登录网站后台任意增删文章等造成负面影响；<br>
-攻击者可通过旁站服务器漏洞进入网站内网对其他服务器进行进一步攻击。<br>
-修复建议：<br>
-修补同一台服务器上的其他网站漏洞；<br>
-建议每个网站单独服务器运行。</p>
-<p>20.后台登录页面绕过<br>
-越权操作，可直接通过访问后台地址进行访问，绕过登陆限制。<br>
-可带来如下危害：<br>
-一旦入侵者发现后台url，便可进入后台页面，进行非法操作。<br>
-修复建议：<br>
-对后台所有url做好权限设置。<br>
-禁止外网访问后台地址。</p>
-<p>21.CVS 信息泄漏<br>
-漏洞描述：<br>
-由于目标网站没有及时清除CVS服务器连接时的残留信息，导致存在此漏洞。<br>
-漏洞测试：<br>
-访问／cvs/等页面，若出现下图内容，则表示存在此漏洞。<br>
-@前面是用户名 后面是服务器地址<br>
-漏洞危害：<br>
-攻击者可利用该漏洞下载网站的源代码，获得数据库的连接密码等敏感信息；<br>
-攻击者可通过源代码分析出新的系统漏洞，从而进一步入侵系统。<br>
-修复建议：<br>
-删除指定CVS生成的各种文件，如“/CVS/Root”等。</p>
-<p>22.短文件名泄漏漏洞<br>
-漏洞等级：中危<br>
-漏洞描述：<br>
-该漏洞由于Windows处理较长文件名时为方便使用较短的文件名代替，攻击者可利用该漏洞尝试获取网站服务器下的文件名。<br>
-漏洞危害：<br>
-黑客可通过该漏洞尝试获取网站服务器下存放文件的文件名，达到获取更多信息来入侵服务器的目的。<br>
-修复建议：<br>
-修改Windows配置，关闭短文件名功能。<br>
-部署Web应用防火墙，防止攻击者批量尝试。</p>
-<p>23.命令执行漏洞<br>
-风险等级：高危<br>
-漏洞描述：<br>
-命令执行漏洞是指代码未对用户可控参数做过滤，导致直接带入执行命令的代码中，对恶意构造的语句，可被用来执行任意命令。<br>
-漏洞危害：<br>
-黑客可在服务器上执行任意命令，写入后门，从而入侵服务器，获取服务器的管理员权限，危害巨大。<br>
-修复建议：<br>
-严格过滤用户输入的数据，禁止执行系统命令</p>
-<p>24.文件包含漏洞<br>
-漏洞描述：<br>
-文件包含漏洞多数情况出现在PHP中，当然jsp中也存在，文件包含分为本地包含与远程包含。<br>
-漏洞危害：<br>
-1.绕过WAF上传木马文件<br>
-2.加载有害的远程内容，影响程序运行。<br>
-漏洞修复：<br>
-1.关闭allow_url_fopen<br>
-2.避免使用include参数<br>
-3.使用web检测文件内容</p>
-<p>25.验证机制缺陷漏洞<br>
-风险等级：中危<br>
-漏洞描述：<br>
-由于网站管理后台系统登录无验证码校验，可导致后台用户名密码被暴力破解。<br>
-漏洞危害：<br>
-1.攻击者可利用该漏洞无限次提交用户名密码，从而可以暴力破解后台用户名及密码；<br>
-2.暴力破解后登录其中一个帐号可进管理后台，攻击者登录网站后台任意增删文章等造成负面影响；<br>
-3.攻击者可进一步登陆后台查看网站信息、上传恶意脚本文件，获取服务器权限，导致局域网(内网)被入侵。<br>
-修复建议：<br>
-1.对该页面进行访问控制，禁止外网IP或非法IP访问后台页面，并增加验证码校验，加强帐号锁定机制。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Shell 脚本-case 及函数       ]]></title>
-        <id>https://gordanw.github.io/post/shell-jiao-ben-case-ji-han-shu-wong/</id>
-        <link href="https://gordanw.github.io/post/shell-jiao-ben-case-ji-han-shu-wong/">
-        </link>
-        <updated>2021-11-13T04:29:56.000Z</updated>
-        <content type="html"><![CDATA[<ol>
-<li>case 语句<br>
-面向过程：<br>
-控制结构<br>
-顺序结构（默认的结构）<br>
-选项结构（if、then、elif、else、等）<br>
-循环结构（for、while、until）</li>
-</ol>
-<p>case 语句：选择结构</p>
-<p>case SWITCH in<br>
-VALUE1)<br>
-statemnet<br>
-．．．<br>
-;;<br>
-VALUE2)<br>
-statemnet<br>
-．．．<br>
-;;<br>
-VALUE3)<br>
-statemnet<br>
-．．．<br>
-;;<br>
-*)<br>
-statemnet<br>
-．．．<br>
-;;<br>
-esac</p>
-<p>例：<br>
-#!/bin/bash<br>
-case $1 in<br>
-start)<br>
-echo start<br>
-;;<br>
-stop)<br>
-echo stop<br>
-;;<br>
-restart)<br>
-echo restart<br>
-;;<br>
-*)<br>
-echo &quot;USE$0 start|stop|restart&quot;<br>
-;;<br>
-esac</p>
-<ol start="2">
-<li>函数<br>
-函数：（function）功能，实现编译结构化，主要目的实现代码重用，在一个代码会在多次使用时，<br>
-可以独立写成一个模块，在以下需要使用时，直接调用即可，但是函数不能作为执行入后，只能被其他程<br>
-序调用才能执行，一个函数可以被多个程序调用</li>
-</ol>
-<p>实现函数;<br>
-在 bash 中使用函数功能，需要把本来可以独立执行的一段代码封装成独立的一个功能，并取个<br>
-名<br>
-称，而后在需要使用此函数功能时，直接调用该函数名称即可</p>
-<p>定义方法：<br>
-方法一：<br>
-function FUMNAME {<br>
-command<br>
-}<br>
-注解：<br>
-function 是关键字，必须要指定，不能错误</p>
-<p>方法二：<br>
-FUMNAME() {<br>
-command<br>
-}</p>
-<p>注解：<br>
-FUMNAME，命名规则，不能与变量名同样，只能包含字母、数字、下划线，而且不能以数字<br>
-开头，小括号()紧跟在使用 FUMNAME 后面，不能有空格，大括号括起需要执行的命令</p>
-<p>例 1：<br>
-#!/bin/bash<br>
-function MENU {<br>
-cat &lt;&lt; EOF<br>
-d|D) show disk usages<br>
-m|M) show memory userges<br>
-s|S) show swap userges<br>
-q|Q) quit.<br>
-EOF<br>
-}<br>
-MENU<br>
-read -p &quot;You choice: &quot; CHOICE<br>
-until [ $CHOICE == 'q' -o $CHOICE == 'Q' ]<br>
-do<br>
-case $CHOICE in<br>
-d|D) df -lh ;;<br>
-m|M) free -m |grep &quot;^Mem&quot; ;;<br>
-s|S) free -m |grep &quot;^Swap&quot; ;;<br>
-*)<br>
-echo -e &quot;\n[d|D][m|M][s|S]&quot;<br>
-;;<br>
-esac<br>
-MENU<br>
-read -p &quot;You choice: &quot; CHOICE<br>
-done</p>
-<p>自定义函数执行状态返回值：<br>
-return #<br>
-0-255<br>
-在函数执行过程中，凡是遇到 return 都停止执行</p>
-<p>例：<br>
-#!/bin/bash<br>
-ADDUSER() {<br>
-USERNAME=cjk<br>
-if ! id -u $USERNAME &amp;&gt; /dev/null<br>
-then<br>
-useradd $USERNAME &amp;&gt; /dev/null<br>
-echo $USERNAME |passwd --stdin $USERNAME &amp;&gt; /dev/null<br>
-return 0<br>
-else<br>
-return 1<br>
-fi<br>
-}<br>
-ADDUSER<br>
-echo $?</p>
-<p>传递参数给函数：<br>
-在函数中使用$1、$2 . . . 引用位置变量，在调用函数时，FUNNAME VALUE VALUE . . .<br>
-例：<br>
-#!/bin/bash<br>
-TOSUM() {<br>
-echo $[$1+$2]<br>
-}<br>
-TOSUM 5 8</p>
-<p>如果在执行脚本时指定参数时：<br>
-在函数中使用$1、$2 . . . 引用位置变量，在调用函数时，FUNNAME $1、$2 . . .</p>
-<p>例 1：<br>
-#!/bin/bash<br>
-TOSUM() {<br>
-echo $[$1+$2]<br>
-}<br>
-TOSUM $1 $2</p>
-<p>例 2：<br>
-判定某个网段的主机乊间那些可以 ping 通<br>
-1、使用函数实现每一台主机的判定过程 IP 为 192.168.0.1 - 192.168.0.10<br>
-2、在主程序中来调用函数范围内的所有主机的在线情况<br>
-#!/bin/bash<br>
-PINGHOST() {<br>
-if ping -c 1 -W 1 192.168.0.$1 &amp;&gt; /dev/null<br>
-then<br>
-echo &quot;192.168.0.$1 OK&quot;<br>
-else<br>
-echo &quot;192.168.0.$1 ONT OK&quot;<br>
-fi<br>
-}</p>
-<p>for i in <code>seq 1 10</code><br>
-do<br>
-PINGHOST $i<br>
-done</p>
-<p>或：</p>
-<p>#!/bin/bash<br>
-PINGHOST() {<br>
-if ping -c 1 -W 1 $1.$2 &amp;&gt; /dev/null<br>
-then<br>
-echo &quot;$1.$2 OK&quot;<br>
-else<br>
-echo &quot;$1.$2 ONT OK&quot;<br>
-fi<br>
-}<br>
-for i in <code>seq $2 $3</code><br>
-do<br>
-PINGHOST $1 $i<br>
-done<br>
-在执行脚本时，需要传递 3 个参数，网段 起始主机 结束主机，例：./ping.sh 192.168.0 1 10</p>
-<p>for ((expr1 ; expr2 ; expr3))<br>
-do<br>
-循环体<br>
-done</p>
-<p>注解：(( expr1 ; expr2 ; expr3 ))<br>
-expr1，第一个表达式：用于指定初始条件，指定控制变量的初始值<br>
-expr2，第二个表达式：判定什么时退出循环<br>
-expr3，第二个表达式：修改 expr1 的变量的值</p>
-<p>例：<br>
-计算 1 到 100 乊间所有整数的和<br>
-#!/bin/bash<br>
-declare -i SUM=0<br>
-for ((I=1;I&lt;=100;I++))<br>
-do<br>
-let SUM+=$I<br>
-done<br>
-echo $SUM</p>
-<p>8.3 shell 案例<br>
-跳板机<br>
-#!/bin/bash<br>
-trap &quot;&quot; HUP INT QUIT TSTP<br>
-while :<br>
-do<br>
-cat &lt;&lt;EOF<br>
-1.piloteer-101<br>
-2.piloteer-120<br>
-3.piloteer-121<br>
-4.quit<br>
-EOF<br>
-read -p &quot;Input number [1-4]: &quot; num<br>
-case $num in<br>
-1)<br>
-ssh root@192.168.1.101<br>
-;;<br>
-2)<br>
-ssh root@192.168.1.120<br>
-;;<br>
-3)<br>
-ssh root@192.168.1.121<br>
-;;<br>
-4)<br>
-kill -9 <code>ps -ef|grep $0 |grep -v grep|awk '{print $2}'</code><br>
-;;<br>
-'')<br>
-true<br>
-;;<br>
-*)<br>
-echo &quot;Please input num [1-4]&quot;<br>
-esac</p>
-<p>done</p>
-<p>1、判断一个指定的 bash 脚本是否有语法错误，如果有则提醒用户键入 Q 或 q，无视错误并退出，<br>
-任意任意键可以通过 vim 打开指定的脚本<br>
-2、如果用户通过 vim 编辑后保存退出时仍然有错误，则重复第一步，如果编辑后没有语法错误，则<br>
-正常退出<br>
-#!/bin/bash<br>
-while ! bash -n $1 ; do<br>
-read -p &quot;Syntax error,[Q|q] to quit others for editing:&quot; CHOICE<br>
-case $CHOICE in<br>
-q|Q)<br>
-echo &quot;Something wrong quiting.&quot;<br>
-exit 5<br>
-;;<br>
-*)<br>
-vim + $1<br>
-;;<br>
-esac<br>
-done<br>
-echo &quot;not error&quot;</p>
-]]></content>
-    </entry>
-</feed>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://gordanw.github.io/tag/3chMPfYaF/" class="tag">
+                    Web
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://gordanw.github.io/post/web-ying-yong-lou-dong-ji-xiu-fu-hui-zong/">
+                  <h3 class="post-title">
+                    Web应用漏洞及修复汇总
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
